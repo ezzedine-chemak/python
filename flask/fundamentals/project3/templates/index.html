@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localhost</title>
+    <style>
+        .welcome{
+            color: black;
+            text-align: center;
+        }
+        .back{
+            display:flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 4px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcome">
+        <h1>welcome !</h1>
+    </div>
+    <div class="back">
+        {% for x in range(0,num): %}
+        <div class="box"style="background-color:{{color}};"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>
