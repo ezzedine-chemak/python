@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="check">
+        <h1 class="word" style="background-color: {{color2}}; color: {{color1}};">***Checkerboard***</h1>
+    </div>
+    <table class="wallpaper">
+        {% for i in range(y) %}
+        <tr>
+            {% for j in range(x) %}
+            <td style="background-color: {{color1}};" ></td> 
+            <td style="background-color: {{color2}};" ></td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for j in range(x) %}
+            <td style="background-color: {{color2}};" ></td>
+            <td style="background-color: {{color1}};" ></td> 
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
