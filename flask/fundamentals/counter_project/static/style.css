@@ -1,0 +1,16 @@
+.counter{
+    display: flex;
+    justify-content: center;
+}
+.click {
+    color: white;
+    background-color: red;
+    width: 100px;
+    height: 65px;
+}
+.reset{
+    color: white;
+    background-color: rgb(0, 13, 255);
+    width: 100px;
+    height: 65px;
+}
