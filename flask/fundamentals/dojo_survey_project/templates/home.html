@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="black">
+        
+        <form action="/submit" method ="POST" class="bg-dark text-primary p-5 rounded col-6 mx-auto">
+            <h2 >Dojo Survey</h2>
+            <div class="form-group">
+                <label for="name">name :</label>
+                <input type="text" name="name" placeholder="your name">
+            </div>
+            <div>
+            <label for="location">Dojo location :</label>
+                <select name="location" class="form-control">
+                    <option value="">--select one--</option>
+                    <option value="">Chicago</option>
+                    <option value="">on ligne</option>
+                    <option value="">New York</option>
+                    <option value="">Tunis</option>
+                </select>
+            </div>
+            <div>
+                <label for="language">Favorite Language :</label>
+                <select name="Language" class="form-control">
+                    <option value="">--select one--</option>
+                    <option value="">Python</option>
+                    <option value="">C#</option>
+                    <option value="">Java</option>
+                    <option value="">Javascript</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Comments" >Comments :</label>
+                <textarea name="comments" placeholder="your comments" cols="30" rows="10"></textarea> 
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+
+    </div>
+</body>
+</html>
